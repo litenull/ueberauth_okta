@@ -34,8 +34,7 @@ defmodule Ueberauth.Strategy.Okta do
     oauth2_params: [scope: "openid email profile"],
     authorize_url: "/oauth2/v1/authorize",
     token_url: "/oauth2/v1/token",
-    userinfo_url: "/oauth2/v1/userinfo",
-    ignores_csrf_attack: true
+    userinfo_url: "/oauth2/v1/userinfo"
 
   alias Ueberauth.Auth.Info
   alias Ueberauth.Auth.Credentials
