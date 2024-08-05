@@ -35,7 +35,8 @@ defmodule Ueberauth.Strategy.Okta do
     authorize_url: "/oauth2/v1/authorize",
     token_url: "/oauth2/v1/token",
     userinfo_url: "/oauth2/v1/userinfo",
-    ignores_csrf_attack: true
+    state_param_cookie_same_site: "None",
+    # ignores_csrf_attack: true
 
   alias Ueberauth.Auth.Info
   alias Ueberauth.Auth.Credentials
